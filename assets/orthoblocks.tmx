@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="20" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="blocks" tilewidth="32" tileheight="32" spacing="4" margin="3">
+  <image source="blocks_fixed.png" width="290" height="110"/>
+  <tile id="0">
+   <properties>
+    <property name="collidable" value="true"/>
+    <property name="isEdge" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="collidable" value="true"/>
+    <property name="isEdge" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="last" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="ground" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAVDEfABMT8QCxCpnhOIuYCYG0mMB4h5SbAPl13CQCxCpDnEAEEgFiJTLzsQc+ChQYARiJmAmBmIWYCYFYjZsOgHAQCLtjcrIAMAAA==
+  </data>
+ </layer>
+ <objectgroup name="objects" width="20" height="10">
+  <object name="spawn2" type="enemy" x="221" y="63" width="69" height="67">
+   <properties>
+    <property name="life" value="2"/>
+   </properties>
+  </object>
+  <object name="spawn1" type="enemy" x="386" y="63" width="128" height="93">
+   <properties>
+    <property name="life" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
